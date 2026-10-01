@@ -1,0 +1,21 @@
+### Get all patients
+GET http://localhost:8080/api/patients
+
+
+### Create patient
+POST http://localhost:8080/api/patients
+Content-Type: application/json
+
+{
+  "id": "P001",
+  "name": "Arun Kumar",
+  "age": 30,
+  "gender": "Male",
+  "phone": "9876543210",
+  "email": "arun@gmail.com",
+  "address": "Chennai"
+}
+
+
+### Get patient by ID
+GET http://localhost:8080/api/patients/P001
